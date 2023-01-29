@@ -49,6 +49,7 @@ conan_cmake_autodetect(settings)
 #https://github.com/conan-io/conan/issues/8081
 
 if(CROSS_BUILD_FOR_ARM)
+message(WARNING "Using CROSS_BUILD_FOR_ARM profile") 
 conan_cmake_install(PATH_OR_REFERENCE .
                     BUILD missing
                     PROFILE_BUILD default PROFILE_HOST ${CMAKE_CURRENT_LIST_DIR}/conan_profiles/orange_zero_profile

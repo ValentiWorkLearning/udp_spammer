@@ -1,5 +1,5 @@
 include(standalone_toolchain_inc)
-target_host=arm-buildroot-linux-uclibcgnueabihf
+target_host=arm-buildroot-linux-gnueabihf
 cc_compiler=gcc
 cxx_compiler=g++
 
